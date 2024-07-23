@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Digital Marketing & Software Services</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --light-bg: #ecf0f1;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            padding: 0 1rem;
+        }
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('/api/placeholder/1200/400') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .btn {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: var(--accent-color);
+        }
+        .services {
+            padding: 3rem 0;
+            background-color: var(--white);
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .service-box {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .service-box h3 {
+            color: var(--secondary-color);
+        }
+        .cta {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        footer {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h1>DigitalPro Solutions</h1>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Elevate Your Digital Presence</h1>
+        <p>Innovative Digital Marketing & Software Solutions</p>
+        <a href="#services" class="btn">Explore Our Services</a>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-box">
+                    <h3>Paid Advertising</h3>
+                    <p>Maximize your ROI with targeted ads on Google and Facebook. Our data-driven approach ensures your message reaches the right audience at the right time.</p>
+                </div>
+                <div class="service-box">
+                    <h3>SEO Optimization</h3>
+                    <p>Boost your organic traffic and climb the search engine rankings. We use cutting-edge SEO strategies to increase your online visibility and attract quality leads.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Website Creation</h3>
+                    <p>Create a stunning online presence with our custom web design services. We build responsive, user-friendly websites that convert visitors into customers.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Content Marketing</h3>
+                    <p>Engage your audience with compelling content that drives results. Our content strategies are designed to build brand authority and foster customer loyalty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="cta">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <p>With years of experience and a passion for digital innovation, we deliver results-driven solutions tailored to your unique business needs. Our team of experts stays ahead of industry trends to ensure your digital strategy is always cutting-edge.</p>
+            <a href="#contact" class="btn">Get Started Today</a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 DigitalPro Solutions. All rights reserved.</p>
+            <p>Contact us: info@digitalprosolutions.com | (555) 123-4567</p>
+        </div>
+    </footer>
+</body>
+</html>
